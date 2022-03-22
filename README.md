@@ -8,4 +8,4 @@ Freigegebene getestete Versionen für den Einsatz in Livesystemen ausschließlic
 Dieses Plugin stellt, wie der Name schon sagt, eine druckbare Preisliste zur Verfügung, die Ihre Kunden ansehen und/oder drucken können. 
 Sobald die Dateien des Plugins installiert sind, können Sie die Preislistenanzeige Ihres Shops über die neuen, von der Installation erstellten Konfigurationsbildschirme konfigurieren.
 
-Das Modul ist vollständig multilingual, sowohl im Admin als auch im Frontend. 
+Mit den profilbasierten Einstellungen können Sie bis zu drei verschiedene Ansichten der Preisliste konfigurieren und/oder eine bestimmte Ansicht der Preisliste auf eine Kundengruppe beschränken. 
