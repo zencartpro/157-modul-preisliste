@@ -3,7 +3,7 @@
 // SQL installation script for the Printable Pricelist Zen Cart plugin.
 //
 // Based on the configuration settings provided in the pricelist-3.sql file provided in v1.5.0 of this plugin.
-// modified for Zen Cart German 2022-03-20 webchills
+// modified for Zen Cart German 2022-03-22 webchills
 //
 define('PL_CURRENT_VERSION', 'v3.0.1');
 
@@ -80,9 +80,9 @@ for ($profile = 1; $profile <= 3; $profile++) {
   if ($config_info->EOF) {
         $db->Execute(
             "INSERT INTO " . TABLE_CONFIGURATION_GROUP . " 
-                (configuration_group_title, configuration_group_description, sort_order, visible) 
+                (configuration_group_title, configuration_group_description, language_id, sort_order, visible) 
              VALUES
-                ('$config_group_title', 'Settings for printable price-list profile-$profile.', 1, 1)"
+                ('$config_group_title', 'Settings for printable price-list profile-$profile.', 43, 1, 1)"
         );
         $cgi = $db->Insert_ID(); 
         $db->Execute("UPDATE " . TABLE_CONFIGURATION_GROUP . " SET sort_order = $cgi WHERE configuration_group_id = $cgi LIMIT 1");
