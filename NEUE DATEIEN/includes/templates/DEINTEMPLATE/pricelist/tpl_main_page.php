@@ -4,7 +4,7 @@
  * @copyright Copyright 2003-2007 Paul Mathot Haarlem, The Netherlands
  * @copyright parts Copyright 2003-2005 Zen Cart Development Team
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version v1.5.7 (or newer) 
+ * @version v1.5.7g German
  */
 ?>
 <body id="pricelist">
@@ -20,7 +20,7 @@ if ($price_list->config['show_logo']) {
     echo '<a href="' . zen_href_link(FILENAME_DEFAULT) . '">' . zen_image($template->get_template_dir(HEADER_LOGO_IMAGE, DIR_WS_TEMPLATE, $current_page_base, 'images') . '/' . HEADER_LOGO_IMAGE, HEADER_ALT_TEXT) . '</a>';
 }
 ?>
-            <h3><?php echo sprintf(TEXT_PL_HEADER_TITLE, '<a href="' . zen_href_link(FILENAME_DEFAULT) . '">' . TITLE . '</a>'); ?></h3>
+            <h3><?php echo sprintf(TEXT_PL_HEADER_TITLE, '' . TITLE ); ?></h3>
             <p><?php echo sprintf(TEXT_PL_SCREEN_INTRO, $price_list->product_count); ?></p>
         </div>
 <?php
@@ -89,7 +89,7 @@ if (!$price_list->group_is_valid($price_list->current_profile)) {
 <?php
         }
 ?>
-                    <div class="datePL"><?php echo strftime(DATE_FORMAT_LONG); ?></div>
+                    <div class="datePL"><?php echo $zcDate->output(DATE_FORMAT_LONG)?></div>
                     <div id="print-me"><a href="javascript:window.print();"><?php echo PL_PRINT_ME; ?></a></div>
                     <div class="clearBoth"></div>
                 </td>

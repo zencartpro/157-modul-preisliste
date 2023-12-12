@@ -20,11 +20,20 @@ require DIR_WS_MODULES . 'require_languages.php';
 class price_list extends base
 {
     public
-        $current_profile,
+        $additional_joins,
+        $categories_status_clause,
         $config,
-        $manufacturers_names,
+        $currency_symbol,
+        $current_category,
+        $current_profile,
+        $enabled,
         $header_columns,
-        $products_sort_by;
+        $manufacturers_names,
+        $product_count,
+        $product_database_fields,
+        $products_sort_by,
+        $products_status_clause,
+        $rows;
 
     public function __construct()
     {

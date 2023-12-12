@@ -3,9 +3,9 @@
 // SQL installation script for the Printable Pricelist Zen Cart plugin.
 //
 // Based on the configuration settings provided in the pricelist-3.sql file provided in v1.5.0 of this plugin.
-// modified for Zen Cart German 2022-03-22 webchills
+// modified for Zen Cart German 2023-12-12 webchills
 //
-define('PL_CURRENT_VERSION', 'v3.0.1');
+define('PL_CURRENT_VERSION', 'v3.0.2');
 
 // -----
 // Wait for an admin to be logged in prior to any changes.
